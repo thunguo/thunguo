@@ -6,4 +6,13 @@ PPMC Member @ [Apache Seata](https://github.com/apache/incubator-seata-go) · [A
 
 [tew@apache.org](mailto:tew@apache.org)
 
+```bash
+$ cat focus.txt
+
+Distributed Transactions
+Microservices Architecture
+Cloud Native · Kubernetes · Service Mesh
+Go · Java · Python
+```
+
 </div>
