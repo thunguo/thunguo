@@ -6,6 +6,8 @@ PPMC Member @ [Apache Seata](https://github.com/apache/incubator-seata-go) · [A
 
 [tew@apache.org](mailto:tew@apache.org)
 
+</div>
+
 ```bash
 $ cat focus.txt
 
@@ -13,5 +15,3 @@ Distributed Transactions
 Cloud Native
 AI Agent
 ```
-
-</div>
