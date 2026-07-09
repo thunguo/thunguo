@@ -10,9 +10,8 @@ PPMC Member @ [Apache Seata](https://github.com/apache/incubator-seata-go) · [A
 $ cat focus.txt
 
 Distributed Transactions
-Microservices Architecture
-Cloud Native · Kubernetes · Service Mesh
-Go · Java · Python
+Cloud Native
+AI Agent
 ```
 
 </div>
