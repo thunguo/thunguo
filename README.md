@@ -17,13 +17,6 @@
 
 <br/>
 
-<!-- Trophy Section -->
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=thunguo&theme=flat&no-frame=true&no-bg=true&column=4&margin-w=12&margin-h=12" alt="Trophies" />
-</div>
-
-<br/>
-
 ### Tech Stack
 
 <div align="center">
@@ -34,24 +27,20 @@
 
 ### Projects
 
+<div align="center">
+
 | Project | Role | Stars |
-|---------|------|-------|
+|:--------|:-----|:------|
 | [apache/incubator-seata-go](https://github.com/apache/incubator-seata-go) | PPMC Member | ![](https://img.shields.io/github/stars/apache/incubator-seata-go?style=flat-square&label=&color=888888) |
 | [apache/dubbo-admin](https://github.com/apache/dubbo-admin) | Contributor | ![](https://img.shields.io/github/stars/apache/dubbo-admin?style=flat-square&label=&color=888888) |
 | [thunguo/miku-on-desktop](https://github.com/thunguo/miku-on-desktop) | Creator | ![](https://img.shields.io/github/stars/thunguo/miku-on-desktop?style=flat-square&label=&color=888888) |
+
+</div>
 
 <br/>
 
 <div align="center">
 
-<!-- GitHub Stats -->
-<img height="150" src="https://streak-stats.demolab.com?user=thunguo&theme=git-light&hide_border=true&date_format=%5BY.%5Dn.j&mode=daily" />
-&nbsp;&nbsp;
-<img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=thunguo&layout=compact&theme=github_light&hide_border=true&langs_count=6" />
-
-<br/><br/>
-
-<!-- Contact -->
 <a href="mailto:tew@apache.org">
   <img src="https://img.shields.io/badge/tew@apache.org-24292F?style=flat-square&logo=gmail&logoColor=white" />
 </a>
