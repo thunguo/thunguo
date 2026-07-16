@@ -1,6 +1,6 @@
 <div align="center">
 
-# ThunGuo
+![Header](./assets/github-header-banner.png)
 
 PPMC Member @ [Apache Seata](https://github.com/apache/incubator-seata-go) · [Apache Dubbo Admin](https://github.com/apache/dubbo-admin) Contributor · [Community Over Code Asia](https://communityovercode.org) Speaker
 
