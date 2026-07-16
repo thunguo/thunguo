@@ -15,5 +15,6 @@ AI Agent
 ```
 
 <p align="center">
+  <img src="https://gitlyy.vercel.app/api/contribution?username=thunguo&hide_border=true&theme=nord&bg_color=ffffff"/>
   <img src="https://count.getloli.com/get/@thunguo?theme=miku" />
 </p>
