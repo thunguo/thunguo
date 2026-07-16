@@ -6,6 +6,12 @@ PPMC Member @ [Apache Seata](https://github.com/apache/incubator-seata-go) · [A
 
 </div>
 
+<p align="center">
+  <img src="https://github-stats-eta-two.vercel.app/api/stats/thunguo?theme=light&streak=true" 
+       alt="Developer Score" 
+       width="100%">
+</p>
+
 ```bash
 $ cat focus.txt
 
@@ -15,6 +21,5 @@ AI Agent
 ```
 
 <p align="center">
-  <img src="https://gitlyy.vercel.app/api/contribution?username=thunguo&hide_border=true&theme=nord&bg_color=ffffff"/>
   <img src="https://count.getloli.com/get/@thunguo?theme=miku" />
 </p>
