@@ -1,8 +1,9 @@
 <div align="center">
 
-![Header](./assets/github-header-banner.png)
-
 <p align="center">
+  <img src="./assets/about-me.png" 
+       alt="About Me" 
+       width="100%">
   <img src="./assets/miku-self.png" 
        alt="Myself" 
        width="100%">
