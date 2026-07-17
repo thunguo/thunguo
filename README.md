@@ -12,7 +12,7 @@
 </div>
 
 <p align="center">
-  <img src="https://github-stats-eta-two.vercel.app/api/stats/thunguo?theme=light&streak=true" 
+  <img src="./assets/focus.png" 
        alt="Developer Score" 
        width="100%">
 </p>
