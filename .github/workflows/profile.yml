@@ -1,0 +1,96 @@
+name: Update profile activity
+
+on:
+  schedule:
+    - cron: '17 2 * * *' # 10:17 Asia/Shanghai
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - assets/profile/header-*.svg
+      - .github/workflows/profile.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-activity
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - name: Check out profile
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: main
+
+      # The repository token can read this public profile and other public data.
+      # Do not substitute a personal token with access to private repositories.
+      - name: Generate light activity card
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
+        with:
+          card: stats
+          core_version: '2.2.0'
+          fail_on_error: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: ${{ runner.temp }}/profile-cards/stats-light.svg
+          options: >-
+            username=thunguo&custom_title=Public%20GitHub%20activity&hide=stars,commits,issues,contribs&show=prs_merged,reviews&hide_rank=true&show_icons=true&disable_animations=true&card_width=360&line_height=30&text_bold=false&number_format=long&border_radius=0&hide_border=true&bg_color=f6f8fa&title_color=26364a&text_color=475569&icon_color=58799b
+
+      - name: Generate dark activity card
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
+        with:
+          card: stats
+          core_version: '2.2.0'
+          fail_on_error: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: ${{ runner.temp }}/profile-cards/stats-dark.svg
+          options: >-
+            username=thunguo&custom_title=Public%20GitHub%20activity&hide=stars,commits,issues,contribs&show=prs_merged,reviews&hide_rank=true&show_icons=true&disable_animations=true&card_width=360&line_height=30&text_bold=false&number_format=long&border_radius=0&hide_border=true&bg_color=0d1117&title_color=dbe5ef&text_color=a9b6c5&icon_color=85a3c3
+
+      - name: Publish both cards after successful generation
+        env:
+          PROFILE_CARDS_DIR: ${{ runner.temp }}/profile-cards
+        run: |
+          python3 - <<'PY'
+          import os
+          import shutil
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+
+          source = Path(os.environ["PROFILE_CARDS_DIR"])
+          names = ("stats-light.svg", "stats-dark.svg")
+          ET.register_namespace("", "http://www.w3.org/2000/svg")
+          for name in names:
+              tree = ET.parse(source / name)
+              root = tree.getroot()
+              if root.tag != "{http://www.w3.org/2000/svg}svg":
+                  raise ValueError(f"Invalid SVG: {name}")
+              # The renderer uses zero-duration animations when disabled.
+              # Make the final SVG visible in static renderers as well.
+              style = ET.SubElement(root, "{http://www.w3.org/2000/svg}style")
+              style.text = "* { animation: none !important; } .stagger { opacity: 1 !important; }"
+              tree.write(source / name, encoding="unicode")
+          target = Path("assets/profile")
+          target.mkdir(parents=True, exist_ok=True)
+          for name in names:
+              shutil.copyfile(source / name, target / name)
+          PY
+
+          git add -- assets/profile/stats-light.svg assets/profile/stats-dark.svg
+          if git diff --cached --quiet; then
+            echo "Activity cards are already current."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: refresh public profile activity'
+          git pull --rebase origin main
+          git push origin HEAD:main
