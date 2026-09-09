@@ -29,9 +29,6 @@ My work spans distributed transactions, agent memory and context, and model infe
 - **[Miku on Desktop](https://github.com/thunguo/miku-on-desktop)** · Python\
   A desktop companion with an agent loop, persistent memory, computer use, and MCP tools. It connects a small, visible interface to an agent that can act across applications.
 
-- **[AutoPTC](https://github.com/thunguo/autoptc)** · Rust\
-  A local proxy that translates model API protocols for coding agents, including streaming responses. Conversion is limited to configured hosts, with explicit handling of fields that cannot transfer between protocols.
-
 - **[PowerContext 101](https://github.com/thunguo/powercontext101)** · MDX\
   A bilingual guide to agent memory and context: a runnable first loop, framework adapters, and integration boundaries. It explains implemented behavior and keeps validation limits visible.
 
