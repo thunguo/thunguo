@@ -8,7 +8,8 @@
 
 I build reliable systems for distributed services and AI agents.
 
-**Apache Seata (incubating) PPMC member** · [Community announcement](https://www.mail-archive.com/dev%40seata.apache.org/msg02101.html)
+**Apache Seata (incubating) PPMC member** 
+**OceanBase PowerContext Collaborator**
 
 My work spans distributed transactions, agent memory and context, and model inference. I’m interested in the details that make these systems dependable: consistent data under concurrency, predictable failure handling, and interfaces that are clear to use. Alongside code, I contribute reviews, runnable examples, and documentation.
 
@@ -18,22 +19,13 @@ My work spans distributed transactions, agent memory and context, and model infe
 
 - **PowerContext and PowerContext Go** — Fixed [memory search consistency during concurrent writes](https://github.com/oceanbase/powercontext/pull/1253), added a [Pydantic AI adapter](https://github.com/oceanbase/powercontext/pull/1295), and contributed the [initial Go implementation](https://github.com/ob-labs/powercontext-go/pull/1). The work connects agent integration with storage and runtime behavior.
 
+- **Golang** - Updated [go mod why](https://github.com/golang/go/commit/5c06c57d21281817ab62fa3083f92a8cedf76806) to exit non-zero when a requested package or module is not referenced by the main module, while still reporting every target. Added documentation and tests for package, module, vendor, and mixed-result queries.
+
 - **Apache Dubbo Admin** — Added [leader election](https://github.com/apache/dubbo-admin/pull/1423), [persistent indexes and prefix matching](https://github.com/apache/dubbo-admin/pull/1422), and [PromQL and trace diagnosis tools](https://github.com/apache/dubbo-admin/pull/1499) for service operations.
 
 - **vLLM** — Added [FP8 quantization support for ModernBERT](https://github.com/vllm-project/vllm/pull/53101), extending the inference path for an encoder model.
 
 - **Mooncake** — Improved the transfer engine by [reusing TCP CUDA staging buffers across chunks](https://github.com/kvcache-ai/Mooncake/pull/3562), avoiding repeated buffer allocation along the transfer path.
-
-## Selected projects
-
-- **[Miku on Desktop](https://github.com/thunguo/miku-on-desktop)** · Python\
-  A desktop companion with an agent loop, persistent memory, computer use, and MCP tools. It connects a small, visible interface to an agent that can act across applications.
-
-- **[PowerContext 101](https://github.com/thunguo/powercontext101)** · MDX\
-  A bilingual guide to agent memory and context: a runnable first loop, framework adapters, and integration boundaries. It explains implemented behavior and keeps validation limits visible.
-
-- **[Resonate](https://github.com/thunguo/resonate)** · SwiftUI · In development\
-  An iPhone music client built around a personal library, local caching, and optional AI assistance. A place to explore the care that goes into software people use every day.
 
 ## Activity and contact
 
