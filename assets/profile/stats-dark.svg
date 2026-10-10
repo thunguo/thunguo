@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="165" viewBox="0 0 360 165" fill="none" role="img" aria-labelledby="descId">
         <title id="titleId">Public GitHub activity, Rank: B</title>
-        <desc id="descId">Total PRs: 58, Total PRs Merged: 36, Total PRs Reviewed: 58</desc>
+        <desc id="descId">Total PRs: 58, Total PRs Merged: 36, Total PRs Reviewed: 55</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -64,7 +64,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 128.3640415603059;
+        stroke-dashoffset: 128.36404163163493;
       }
     }
   
@@ -142,7 +142,7 @@
     </svg>
   
       <text class="stat not_bold" x="25" y="12.5">Total PRs Reviewed:</text>
-      <text class="stat not_bold" x="169.01" y="12.5" data-testid="reviews">58</text>
+      <text class="stat not_bold" x="169.01" y="12.5" data-testid="reviews">55</text>
     </g>
   </g>
     </svg>
