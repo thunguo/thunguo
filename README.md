@@ -8,8 +8,9 @@
 
 I build reliable systems for distributed services and AI agents.
 
-**Apache Seata (incubating) PPMC member** 
-**OceanBase PowerContext Collaborator**
+- **Apache Seata (incubating) PPMC member** 
+- **OceanBase PowerContext Collaborator**
+- **Apache Dubbo Admin, Golang, MoonCake, vLLM Contributor**
 
 My work spans distributed transactions, agent memory and context, and model inference. I’m interested in the details that make these systems dependable: consistent data under concurrency, predictable failure handling, and interfaces that are clear to use. Alongside code, I contribute reviews, runnable examples, and documentation.
 
