@@ -4,7 +4,7 @@
   <img src="./assets/profile/header-light.svg" width="100%" alt="An abstract network of connected services, with a blue path running through layered systems.">
 </picture>
 
-# ThunGuo
+# ThunGuo([Sessionize](https://sessionize.com/thunguo))
 
 I build reliable systems for distributed services and AI agents.
 
